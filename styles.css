@@ -151,7 +151,6 @@ button {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
-  justify-content: space-around;
 }
 
 .card {
@@ -159,7 +158,9 @@ button {
   height: 100%;
   padding: 50px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
   align-items: center;
   padding: 20px 30px;
   color: white;
