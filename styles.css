@@ -30,6 +30,7 @@ body {
       rgba(255, 255, 255, 0.05) 99.85%);
   backdrop-filter: blur(5px);
   margin-bottom: 30px;
+  padding: 0 10px;
 }
 
 #display {
@@ -78,7 +79,8 @@ body {
 #show-time {
   text-align: center;
   color: white;
-  margin: 10px 0;
+  margin: 15px 0;
+
 }
 
 .green {
@@ -131,7 +133,6 @@ body {
   font-size: x-large;
   font-weight: bold;
   text-decoration: none;
-  color: white;
   top: 3%;
   padding: 10px;
   left: 80%;
@@ -236,5 +237,25 @@ button {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+  }
+
+  .blog-btn {
+    font-size: large;
+    top: 7%;
+    left: 38%;
+
+  }
+
+  .blog-card {
+    margin-top: 44px;
+  }
+
+  #show-time {
+    margin-top: 30px;
+  }
+
+  #question {
+    font-size: 18px;
+    padding: 0 10px;
   }
 }
