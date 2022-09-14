@@ -15,12 +15,19 @@
 <body>
     <h1 class="title"><img src="./logo.png" /></h1>
     <a class="blog-btn" href="index.html">Home.</a>
+    <!-- Blog Card Starts Here -->
     <div class="box-container">
-        <div class="card">
+        <!-- Card-1 -->
+        <div class="blog-card">
             <h2>Difference between Local Storage and Session Storage.</h2>
             <br>
+            <p>The difference between sessionStorage and localStorage is that localStorage data does not expire,
+                whereas
+                sessionStorage
+                data is cleared when the page session ends.</p>
+            <br>
             <h3 class="bold green">Local Storage</h3>
-            <ul class="blog-text-align">
+            <ul class="blog-list-text-align">
                 <li>The storage capacity of local storage is 5MB/10MB.</li>
                 <li>As it is not session-based, it must be deleted via javascript or manually.</li>
                 <li>The client can only read local storage.</li>
@@ -29,7 +36,7 @@
             </ul>
             <br>
             <h3 class="bold green">Session Storage</h3>
-            <ul class="blog-text-align">
+            <ul class="blog-list-text-align">
                 <li>The storage capacity of session storage is 5MB.</li>
                 <li>It’s session-based and works per window or tab. This means that data is <br> stored only for the
                     duration
@@ -38,6 +45,57 @@
                 <li>The client can only read local storage.</li>
                 <li>There is no transfer of data to the server.</li>
                 <li>There are fewer old browsers that support it</li>
+            </ul>
+        </div>
+        <!-- Card-2 -->
+        <div class="blog-card">
+            <h2>Difference between Global Scope and Block Scope.</h2>
+            <br>
+            <h3 class="bold green">Global Scope</h3>
+            <p>Global scope contains all of the things defined outside of all code blocks. A code block simply consists
+                of grouped
+                statements inside curly braces ({ }). if statement, loops, function are examples of structure that
+                create a code block.
+                A global variable has global scope. A global variable is accessible from anywhere in the code. By simply
+                means, the variables defined outside of any function or curly brackets are known as global variables and
+                have global scope.</p>
+            <br>
+            <h3 class="bold green">Block Scope</h3>
+            <p>A variable when declared inside the if or switch conditions or inside for or while loops, are accessible
+                within that
+                particular condition or loop. To be consise the variables declared inside the curly braces are called as
+                within block
+                scope. Block scope is also a sub-type of local scope.</p>
+        </div>
+        <!-- card-3 -->
+        <div class="blog-card">
+            <h2>How Event Loop works in JavaScript?</h2>
+            <br>
+
+            <p>The event loop is a process that waits for the Call Stack to be clear before pushing callbacks from the
+                Task Queue to
+                the Call Stack. Once the Stack is clear, the event loop triggers and checks the Task Queue for available
+                callbacks. If we precisely explain it then we can say that, Event loop is an endless loop, which waits
+                for tasks, executes them and then sleeps until it receives more tasks. The
+                event loop executes tasks from the event queue only when the call stack is empty i.e. there is no
+                ongoing task. The
+                event loop allows us to use callbacks and promises.</p>
+        </div>
+        <!-- card-4 -->
+        <div class="blog-card">
+            <h2>How many types of “undefined” we get in JavaScript?</h2>
+            <ul class="blog-list-text-align">
+                <li>The typeof operator returns undefined when the variable is declared but not defined.</li>
+                <li>The type and value of an empty string and an undefined variable are two different things.
+                    The undefined variable has a data type “undefined” while an empty string has a data type “string”.
+                </li>
+                <li>The amount of arguments we provide in JavaScript need not match the function's parameters. The
+                    unpassed parameters are
+                    set to undefined.</li>
+                <li>When a function has no return value, it returns undefined.</li>
+                <li>Trying to access a non-existing property of an object returns undefined.</li>
+                <li>Non-existing array elements also return undefined.</li>
+                <li>The void operator always returns undefined irrespective of the expression provided to it.</li>
             </ul>
         </div>
     </div>
