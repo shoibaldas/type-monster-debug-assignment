@@ -127,6 +127,18 @@ body {
   display: block;
 }
 
+.blog-btn {
+  font-size: xx-large;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  top: 3%;
+  padding: 10px;
+  left: 80%;
+  cursor: pointer;
+  position: absolute;
+}
+
 .buttons {
   display: flex;
   justify-content: center;
@@ -184,6 +196,8 @@ button {
   position: fixed;
   top: 0;
 }
+
+
 
 @media only screen and (max-width: 700px) {
   .box-container {
