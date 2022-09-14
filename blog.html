@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,7 +11,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500&display=swap" rel="stylesheet" />
 </head>
+
 <body>
-    
+    <h1 class="title"><img src="./logo.png" /></h1>
+    <a class="blog-btn" href="index.html">Home.</a>
+    <div class="box-container">
+        <div class="card">
+            <h2>Difference between Local Storage and Session Storage.</h2>
+            <br>
+            <h3 class="bold green">Local Storage</h3>
+            <ul class="blog-text-align">
+                <li>The storage capacity of local storage is 5MB/10MB.</li>
+                <li>As it is not session-based, it must be deleted via javascript or manually.</li>
+                <li>The client can only read local storage.</li>
+                <li>There is no transfer of data to the server.</li>
+                <li>There are fewer old browsers that support it</li>
+            </ul>
+            <br>
+            <h3 class="bold green">Session Storage</h3>
+            <ul class="blog-text-align">
+                <li>The storage capacity of session storage is 5MB.</li>
+                <li>It’s session-based and works per window or tab. This means that data is <br> stored only for the
+                    duration
+                    of a session, i.e.,
+                    until the browser (or tab) <br> is closed.</li>
+                <li>The client can only read local storage.</li>
+                <li>There is no transfer of data to the server.</li>
+                <li>There are fewer old browsers that support it</li>
+            </ul>
+        </div>
+    </div>
+
 </body>
+
 </html>
