@@ -44,7 +44,14 @@ const typeController = (e) => {
 
   if (newLetterCorrect) {
     display.innerHTML += `<span class="green">${newLetter === " " ? "▪" : newLetter}</span>`;
-  } else {
+    //To prevent next action
+    window.addEventListener('keydown', function (e) {
+      if (e.keyCode == 32 && e.target == document.body) {
+        e.preventDefault();
+      }
+    });
+  }
+  else {
     display.innerHTML += `<span class="red">${newLetter === " " ? "▪" : newLetter}</span>`;
     errorCount++;
   }
@@ -122,6 +129,7 @@ const start = () => {
       startTime = new Date().getTime();
     }
     count--;
+
   }, 1000);
 };
 
